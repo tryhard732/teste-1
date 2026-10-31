@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Echoes of the Abyss</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <aside class="panel">
+        <h1>Project Echoes of the Abyss</h1>
+        <div class="stats" id="stats"></div>
+
+        <div class="section">
+          <h2>Inventário</h2>
+          <ul id="inventory"></ul>
+        </div>
+
+        <div class="section">
+          <h2>Crafting</h2>
+          <div class="craft-grid">
+            <button class="craft-btn" data-recipe="stoneAxe">Machado de Pedra</button>
+            <button class="craft-btn" data-recipe="campfire">Fogueira Básica</button>
+            <button class="craft-btn" data-recipe="recurveBow">Arco Recurvo</button>
+            <button class="craft-btn" data-recipe="plasmaCore">Núcleo de Plasma</button>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Controles</h2>
+          <ul class="controls">
+            <li>WASD / Setas: mover</li>
+            <li>E: coletar recurso / relíquia</li>
+            <li>Espaço: atacar</li>
+            <li>Shift: correr</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="viewport-wrap">
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+        <div class="hud-message" id="hudMessage">Explorando o planeta-prisão...</div>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
